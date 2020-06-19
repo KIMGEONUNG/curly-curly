@@ -2,3 +2,4 @@
 /*.l
 /restart.sh
 lex.yy.c
+*.swp
