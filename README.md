@@ -1,4 +1,5 @@
-<img src="https://raw.githubusercontent.com/KIMGEONUNG/curly-curly/master/git_material/curly-brackets.png?token=AHU4PHOBRPUPI7YNBS3NFPC65QL2U" width=300>
+<img src="https://raw.githubusercontent.com/KIMGEONUNG/curly-curly/master/git_material/curly-brackets.png?token=AHU4PHIHMD2NQOP6J5YUBF265QPCG" width=300>
+
 
 ## 1. Overview
 - This project is for convert K&R style code into Allman style code, or vice versa.
