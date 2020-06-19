@@ -24,11 +24,14 @@ This project use cpp language and cc compiler of which version is v7.5.0.
 - Convert _"no bracket"_ into _K&R_ style (Not Implemented)
 - Convert _"no bracket"_ into _Allman_ style (Not Implemented)
 
+- Use only empty space, not use tab
+- Indentation is four empty spaces.
+
 ## 4. Usage
 
 ### Flags
 
-- **--kr** : Convert to K&R style
+- **--knr** : Convert to K&R style
 - **--allman** :  Convert to K&R Allman style
 - **--include-no-bracket** : If this flag would be included, no bracket style will convert to target bracket style.
 - **--help**
