@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/KIMGEONUNG/curly-curly/master/git_material/curly-brackets.png?token=AHU4PHIHMD2NQOP6J5YUBF265QPCG" width=300>
+<img src="https://raw.githubusercontent.com/KIMGEONUNG/curly-curly/master/git_material/curly-brackets.png?token=AHU4PHMV2QO6IGWI3GPQFUS65QUNO" width=300>
 
 
 ## 1. Overview
