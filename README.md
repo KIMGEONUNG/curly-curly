@@ -1,4 +1,3 @@
-
 <img src="https://raw.githubusercontent.com/KIMGEONUNG/curly-curly/master/git_material/curly-brackets.png?token=AHU4PHOBRPUPI7YNBS3NFPC65QL2U" width=300>
 
 ## 1. Overview
@@ -21,7 +20,30 @@ This project use cpp language and cc compiler of which version is v7.5.0.
 ## 3. Features
 - Convert _K&R_ style into _Allman_ style (Not Implemented)
 - Convert _Allman_ style into _K&R_ style (Not Implemented)
-- Convert _"no braket"_ into _K&R_ style (Not Implemented)
-- Convert _"no braket"_ into _Allman_ style (Not Implemented)
+- Convert _"no bracket"_ into _K&R_ style (Not Implemented)
+- Convert _"no bracket"_ into _Allman_ style (Not Implemented)
 
 ## 4. Usage
+
+### Flags
+
+- **--kr** : Convert to K&R style
+- **--allman** :  Convert to K&R Allman style
+- **--include-no-bracket** : If this flag would be included, no bracket style will convert to target bracket style.
+- **--help**
+
+You can also check the options description from --help option like below.
+
+```bash
+  > curly --help
+```
+
+### 5. Example
+
+```bash
+  > curly ./sample_code/allman_style.cs --kr > new_kr_style.cs
+```
+
+```bash
+  > curly ./sample_code/kr_style.cs --allman > new_allman_style.cs
+```
