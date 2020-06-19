@@ -1,3 +1,3 @@
 make clean
 make
-./a.out < sample_code/allman_style.cs
+./a.out < ../sample_code/knr_style.cs
