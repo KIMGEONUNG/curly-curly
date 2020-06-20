@@ -4,3 +4,7 @@
 lex.yy.c
 *.swp
 *.sh
+/curly
+/to_allman/allman
+/to_knr/knr
+
