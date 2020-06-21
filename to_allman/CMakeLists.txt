@@ -18,6 +18,9 @@ add_executable( allman
     ${FLEX_lexer_OUTPUTS}
 )
 
-#add_library(to_allman.l)
-
 target_link_libraries( allman ${FLEX_LIBRARIES} )
+
+
+INSTALL ( TARGETS allman 
+        RUNTIME DESTINATION /home/comar/bin/to_allman
+        )

@@ -18,6 +18,9 @@ add_executable( knr
     ${FLEX_lexer_OUTPUTS}
 )
 
-#add_library(to_knr.l)
-
 target_link_libraries( knr ${FLEX_LIBRARIES} )
+
+
+INSTALL ( TARGETS knr 
+        RUNTIME DESTINATION /home/comar/bin/to_knr
+        )
