@@ -22,5 +22,5 @@ target_link_libraries( knr ${FLEX_LIBRARIES} )
 
 
 INSTALL ( TARGETS knr 
-        RUNTIME DESTINATION /home/comar/bin/to_knr
+        RUNTIME DESTINATION ~/.local/bin/to_knr
         )

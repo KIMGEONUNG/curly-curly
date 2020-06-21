@@ -18,5 +18,5 @@ add_subdirectory(./to_knr)
 add_subdirectory(./to_allman)
 
 INSTALL ( TARGETS curly 
-        RUNTIME DESTINATION /home/comar/bin
+        RUNTIME DESTINATION ~/.local/bin    
         )

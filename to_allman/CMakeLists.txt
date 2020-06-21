@@ -22,5 +22,5 @@ target_link_libraries( allman ${FLEX_LIBRARIES} )
 
 
 INSTALL ( TARGETS allman 
-        RUNTIME DESTINATION /home/comar/bin/to_allman
+        RUNTIME DESTINATION ~/.local/bin/to_allman
         )
