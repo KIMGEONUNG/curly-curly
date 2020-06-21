@@ -50,6 +50,11 @@ int main(int argc, char *argv[])
         }
         else if (vm.count("include-no-bracket"))
         {
+            std::cout << "Not inplemented" << std::endl;
+        }
+        else
+        {
+            std::cout << "Execute nothing" << std::endl;
         }
 
     }

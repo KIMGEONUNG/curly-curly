@@ -7,4 +7,5 @@ lex.yy.c
 /curly
 /to_allman/allman
 /to_knr/knr
+/build
 
