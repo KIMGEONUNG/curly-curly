@@ -13,7 +13,6 @@
 ## 2. Environment & Dependency
 - **Linux** : Ubuntu 18.04.4 LTS
 - **Flex** : ver. 2.6.4
-- **Bison** : ver. 3.0.4
 
 This project use cpp language and cc compiler of which version is v7.5.0. 
 
@@ -27,6 +26,20 @@ This project use cpp language and cc compiler of which version is v7.5.0.
 - Indentation is four empty spaces.
 
 ## 4. Usage
+
+### Installation
+
+Follow the below direction for installation.
+
+```bash
+   git clone https://github.com/KIMGEONUNG/curly-curly 
+   cd curly-curly
+   mkdir build
+   cd build
+   cmake ..
+   make
+   make install
+```
 
 ### Flags
 
@@ -44,9 +57,16 @@ You can also check the options description from --help option like below.
 ### 5. Example
 
 ```bash
-  > curly ./sample_code/allman_style.cs --kr > new_kr_style.cs
+  > curly --knr < ../sample_code/allman_style.cs 
 ```
 
 ```bash
-  > curly ./sample_code/kr_style.cs --allman > new_allman_style.cs
+  > curly --allman < ../sample_code/knr_style.cs 
+```
+
+If you want to save result, use redirection ">" command like below
+
+
+```bash
+  > curly --knr < ../sample_code/allman_style.cs > new_knr_style.cs
 ```
