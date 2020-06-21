@@ -51,7 +51,7 @@ make install
 You can also check the options description from --help option like below.
 
 ```bash
-  > curly --help
+curly --help
 ```
 
 ### 5. Example
