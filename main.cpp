@@ -7,10 +7,19 @@
 
 using namespace boost::program_options;
 
+#define PATH_MAX_ 255
+
+std::string get_exe_path() {
+  char buf[PATH_MAX_ + 1];
+  if (readlink("/proc/self/exe", buf, sizeof(buf) - 1) == -1)
+  throw std::string("readlink() failed");
+  std::string str(buf);
+  return str.substr(0, str.rfind('/'));
+}
+
 int main(int argc, char *argv[])
 {
-    std::string argv_str(argv[0]);
-    std::string base = argv_str.substr(0, argv_str.find_last_of("/"));
+    std::string base = get_exe_path();
     std::string knr_path_str = base + "/to_knr/knr";
     std::string allman_path_str = base + "/to_allman/allman";
 
@@ -40,12 +49,12 @@ int main(int argc, char *argv[])
         }
         else if (vm.count("knr"))
         {
-            std::cout << "Convert to K&R style..." << '\n';
+            //std::cout << "Convert to K&R style..." << '\n';
             std::system(knr_path);
         }
         else if (vm.count("allman"))
         {
-            std::cout << "Convert to Allman style..." << '\n';
+            //std::cout << "Convert to Allman style..." << '\n';
             std::system(allman_path);
         }
         else if (vm.count("include-no-bracket"))
