@@ -8,7 +8,16 @@ int depth=0;
 %}
 
 %%
-^.*[a-zA-Z].*"{" {
+\n[\ ]*+"{" { // This is allman style, so style must be reserved
+
+    for(int i = 0; i < yyleng; i++)
+    {
+        printf("%c", yytext[i]); 
+    }
+    depth++;
+} 
+
+^.*[a-zA-Z].*"{" { // This is knr style, so style conversion occurs
 
     for(int i = 0; i < yyleng-1; i++)
     {
@@ -21,8 +30,6 @@ int depth=0;
     }
     depth++;
     printf("{"); 
-
-    //startcnt++; 
 } 
 
 ^[ ]*"}" {
