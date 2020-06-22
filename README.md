@@ -17,8 +17,8 @@
 This project use cpp language and cc compiler of which version is v7.5.0. 
 
 ## 3. Features
-- Convert _K&R_ style into _Allman_ style (Not Implemented)
-- Convert _Allman_ style into _K&R_ style (Not Implemented)
+- Convert _K&R_ style into _Allman_ style 
+- Convert _Allman_ style into _K&R_ style 
 - Convert _"no bracket"_ into _K&R_ style (Not Implemented)
 - Convert _"no bracket"_ into _Allman_ style (Not Implemented)
 
@@ -32,13 +32,13 @@ This project use cpp language and cc compiler of which version is v7.5.0.
 Follow the below direction for installation.
 
 ```bash
-   git clone https://github.com/KIMGEONUNG/curly-curly 
-   cd curly-curly
-   mkdir build
-   cd build
-   cmake ..
-   make
-   sudo make install
+git clone https://github.com/KIMGEONUNG/curly-curly 
+cd curly-curly
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
 ```
 
 ### Flags
@@ -51,22 +51,21 @@ Follow the below direction for installation.
 You can also check the options description from --help option like below.
 
 ```bash
-  > curly --help
+curly --help
 ```
 
 ### 5. Example
 
 ```bash
-  > curly --knr < ../sample_code/allman_style.cs 
+curly --knr < ../sample_code/allman_style.cs 
 ```
 
 ```bash
-  > curly --allman < ../sample_code/knr_style.cs 
+curly --allman < ../sample_code/knr_style.cs 
 ```
 
 If you want to save result, use redirection ">" command like below
 
-
 ```bash
-  > curly --knr < ../sample_code/allman_style.cs > new_knr_style.cs
+curly --knr < ../sample_code/allman_style.cs > new_knr_style.cs
 ```
