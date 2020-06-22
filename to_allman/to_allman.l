@@ -29,6 +29,10 @@ int depth=0;
     depth--;
 
     if(depth < 0) {
+        for(int i = 0; i < yyleng; i++)
+        {
+            printf("%c", yytext[i]); 
+        }
     }
     else {
         for(int _ = 0; _ < depth; _++)
