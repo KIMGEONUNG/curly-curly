@@ -1,0 +1,11 @@
+#/usr/bin/env bash
+
+_curly_completions()
+{
+  COMPREPLY+=("--help")
+  COMPREPLY+=("--knr")
+  COMPREPLY+=("--allman")
+  COMPREPLY+=("--include-no-bracket")
+}
+
+complete -F _curly_completions curly 

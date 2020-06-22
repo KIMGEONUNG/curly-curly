@@ -38,7 +38,7 @@ Follow the below direction for installation.
    cd build
    cmake ..
    make
-   make install
+   sudo make install
 ```
 
 ### Flags

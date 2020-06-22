@@ -16,6 +16,7 @@ message("Boost_PROGRAM_OPTIONS_LIBRARY : ${Boost_PROGRAM_OPTIONS_LIBRARY}")
 
 add_subdirectory(./to_knr)
 add_subdirectory(./to_allman)
+add_subdirectory(./complete)
 
 INSTALL ( TARGETS curly 
         RUNTIME DESTINATION ~/.local/bin    
