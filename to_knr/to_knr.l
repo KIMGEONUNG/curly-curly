@@ -1,18 +1,33 @@
 %{
 #include <stdio.h>
-//int startcnt=0;
-//int endcnt=0;
+
+int depth=0;
 %}
 
 %%
-\n[\ ]*+"{" {
+\n[\ ]*+"{" { // This is allman style, so style conversion occurs
+    depth++;
     printf("{"); 
-    //startcnt++; 
 } 
 
-"}" {
+^.*[a-zA-Z].*"{" { // This is knr style, so style must be reserved 
+
+    for(int i = 0; i < yyleng; i++)
+    {
+        printf("%c", yytext[i]); 
+    }
+    depth++;
+} 
+
+^[ ]*"}" {
+    depth--;
+
+    for(int _ = 0; _ < depth; _++)
+    {
+        printf("    ");
+    }
+
     printf("}"); 
-    //endcnt++;
 }
 
 . { 
@@ -23,6 +38,4 @@
 int main(int argc, char **argv)
 {  
     yylex();  
-    //printf("start count : %d\n", startcnt);
-    //printf("end count : %d\n", endcnt);
 }
